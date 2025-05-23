@@ -1,0 +1,7 @@
+
+torch
+Pillow
+matplotlib
+tensorflow
+streamlit
+transformers
