@@ -1,6 +1,8 @@
 torch
 Pillow
 matplotlib
-tensorflow
 streamlit
 transformers
+opencv-python
+numpy
+scipy
