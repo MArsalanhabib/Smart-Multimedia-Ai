@@ -1,7 +1,6 @@
 
 import streamlit as st
 from object_detection.yolo_detection import detect_objects
-from image_classification.classify_image import classify_image
 from text_generation.generate_caption import generate_caption
 
 st.title("Smart Multimedia AI System")
@@ -14,11 +13,6 @@ if uploaded_file:
 
     st.subheader("1. Object Detection")
     detect_objects("temp.jpg")
-
-    st.subheader("2. Image Classification")
-    classes = classify_image("temp.jpg")
-    for c in classes:
-        st.write(f"{c[1]}: {round(c[2]*100, 2)}%")
 
     st.subheader("3. Text Generation")
     caption = generate_caption("An image of " + classes[0][1])
