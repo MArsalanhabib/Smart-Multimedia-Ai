@@ -1,5 +1,5 @@
 torch
-tensorflow<=2.5.3
+tensorflow==2.5.2
 Pillow
 matplotlib
 streamlit
